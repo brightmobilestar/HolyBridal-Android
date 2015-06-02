@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rltRegisterTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff1777" >
+
+        <Button
+            android:id="@+id/btnBackFromRegister"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_back" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnBackFromRegister2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left"
+            >
+        </Button>
+
+        <TextView
+            android:id="@+id/txvRegister"
+            android:layout_width="99dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/btn_register"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnMenuForRegisterFragment"
+            android:layout_width="20dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_menu" />
+        
+        <Button
+            android:id="@+id/btnMenuForRegisterFragment2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" />
+        </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/rltRegisterInfoWrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="262dp"
+                android:layout_height="152dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/app_logo"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:id="@+id/txvUserDetails"
+                android:layout_width="102dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="184dp"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_user_details"
+                android:textColor="#ff2777"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/edtUserFullName"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="207dp"
+                android:background="@xml/round_corner"
+                android:gravity="center_vertical"
+                android:hint="@string/placeholder_user_full_name"
+                android:inputType="textPersonName"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="13sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtUserEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="253dp"
+                android:background="@xml/round_corner"
+                android:gravity="center_vertical"
+                android:hint="@string/placeholder_user_email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="13sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtUserPassword1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="299dp"
+                android:background="@xml/round_corner"
+                android:gravity="left|center_vertical"
+                android:hint="@string/placeholder_user_password"
+                android:inputType="textPassword"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="13sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtUserPassword2"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="345dp"
+                android:background="@xml/round_corner"
+                android:gravity="left|center_vertical"
+                android:hint="@string/placeholder_user_password_repeat"
+                android:inputType="textPassword"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="13sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/edtUserMobile"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="391dp"
+                android:background="@xml/round_corner"
+                android:gravity="left|center_vertical"
+                android:hint="@string/placeholder_user_phone"
+                android:inputType="phone"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="13sp" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txvUserContactMethod"
+                android:layout_width="209dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="445dp"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_user_contact_method"
+                android:textColor="#ff2777"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/lltSegmentWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_marginTop="468dp"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <TextView
+                    android:id="@+id/txvUserContactByEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@xml/round_segment11"
+                    android:gravity="center"
+                    android:text="@string/btn_email"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/txvUserContactByMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:background="@xml/round_segment20"
+                    android:gravity="center"
+                    android:text="@string/btn_mobile"
+                    android:textColor="#ff1777"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txvWeddingDate"
+                android:layout_width="129dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="511dp"
+                android:gravity="center_vertical"
+                android:text="@string/lbl_wedding_date"
+                android:textColor="#ff2777"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnWeddindDate"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="535dp"
+                android:background="@xml/round_corner"
+                android:gravity="left|center_vertical"
+                android:hint="@string/placeholder_add_date"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:textSize="13sp" >
+            </Button>
+
+            <Button
+                android:id="@+id/btnShowBirthdayPickerView"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="535dp"
+                android:background="@drawable/btn_arrow_down" />
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="131dp"
+                android:layout_height="36dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="601dp"
+                android:background="@drawable/btn_register" />
+
+            <LinearLayout
+                android:id="@+id/lltTermsWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="671dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="right"
+                    android:text="@string/lbl_term1"
+                    android:textColor="#555555"
+                    android:maxLines="1"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:id="@+id/txvTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="@string/lbl_term2"
+                    android:textColor="#ff2777"
+                    android:maxLines="1"
+                    android:textSize="8sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:maxLines="1"
+                    android:gravity="left"
+                    android:text="@string/lbl_term3"
+                    android:textColor="#555555"
+                    android:textSize="8sp" />
+            </LinearLayout>
+            <Button
+	            android:id="@+id/btnTerms"
+	            android:layout_width="26dp"
+	            android:layout_marginTop="681dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_marginRight="5dp"
+	            android:layout_height="29dp"
+	            android:background="@drawable/btn_terms" 
+	            />
+            
+        </RelativeLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+	    android:id="@+id/rltDatePickerWrapper"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone"
+	    >	    
+	    <ImageView
+	        android:contentDescription="@string/app_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#B3000000" 
+	        />
+	    <ImageView
+	        android:contentDescription="@string/app_name"
+	        android:layout_width="262dp"
+	        android:layout_height="152dp"
+	        android:layout_marginTop="100dp"
+	        android:background="@drawable/app_logo"
+	        android:layout_centerHorizontal="true"
+	        />
+	    <RelativeLayout
+	        android:id="@+id/rltDatePickerView"
+	        android:layout_width="match_parent"
+	        android:layout_height="186dp"
+	        android:layout_alignParentBottom="true"
+	        >
+	        
+	        <RelativeLayout
+	            android:id="@+id/rltDatePickerViewTopBar"
+	            android:layout_width="match_parent"
+	            android:layout_height="43dp"
+	            android:background="#ff1777" 
+	            >
+	            <Button
+	                android:id="@+id/btnDateOfWedding"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentLeft="true"
+	                android:background="#ff1777"
+	                android:paddingLeft="10dp"
+	                android:text="@string/btn_date_of_wedding" 
+	                android:textSize="11sp"
+	                android:textColor="#ffffff"
+	                />
+	            <Button
+	                android:id="@+id/btnSelectDate"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:background="#ff1777"
+	                android:paddingRight="10dp"
+	                android:text="@string/btn_select_filter_item" 
+	                android:gravity="center"
+	                android:textSize="14sp"
+	                android:textColor="#ffffff"
+	                />
+	        </RelativeLayout>
+	        
+	        <LinearLayout
+	             android:id="@+id/rltDatePickerViewBody"
+	             android:layout_width="match_parent"
+	             android:layout_height="match_parent"
+	             android:layout_below="@+id/rltDatePickerViewTopBar"
+	            >
+				<NumberPicker
+				    android:background="#ffffff"
+				    android:id="@+id/pickerDay"
+	                android:layout_height="match_parent"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.3" 
+	                />
+	            <NumberPicker
+	                android:background="#ffffff"
+	                android:id="@+id/pickerMonth"
+	                android:layout_height="match_parent"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.4" 
+	                />
+				<NumberPicker
+				    android:background="#ffffff"
+				    android:id="@+id/pickerYear"
+	                android:layout_height="match_parent"
+	                android:layout_width="0dp"
+	                android:layout_weight="0.3" 
+	                />
+	        </LinearLayout>
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

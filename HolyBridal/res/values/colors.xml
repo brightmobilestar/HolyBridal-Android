@@ -1,0 +1,10 @@
+<resources>
+
+    <color name="slideItemSelected">#ff1777</color>
+    <color name="slideItemNormal">#262626</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="pinkColor">#ff1777</color>
+    <color name="transparent">#00000000</color>
+    <color name="semiTransparent">#B3000000</color>
+
+</resources>

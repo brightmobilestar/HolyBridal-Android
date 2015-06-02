@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rltCategorySearchBar"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" 
+        android:background="#333333"
+        android:padding="5dp"
+        android:focusableInTouchMode="true"
+        >
+        
+     <EditText 
+         android:id="@+id/edtSearchCategory"
+         android:hint="@string/placeholder_search_keyword"
+         android:imeOptions="actionSearch" 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@xml/round_corner"
+         android:paddingLeft="3sp"
+         android:paddingRight="3dp"
+         android:enabled="false"
+         android:gravity="center"
+         android:textSize="12sp"
+         />
+        
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/rltTopBar2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff1777" >
+
+        <Button
+            android:id="@+id/btnBackFromCategoryToSupplier"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_back" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnBackFromCategoryToSupplier2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txvFindCategory"
+            android:layout_width="144dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/lbl_find_supplies"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnSearchCategories"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_search" />
+
+        <Button
+            android:id="@+id/btnSearchCategories2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" />
+        </RelativeLayout>
+
+      <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_below="@+id/rltCategorySearchBar"
+		    >
+
+		    <ListView
+		         android:id="@+id/lstCategoryList"
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:scrollbars="none"
+		         android:divider="#00000000"
+		        >        
+		    </ListView>
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rltTopBar4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff1777" >
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_filter_favorite" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnFilter2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txvFavoriteTobBarTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/txv_favorite_suppliers"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnMenuForFavoriteFragment"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_menu" />
+
+        <Button
+            android:id="@+id/btnMenuForFavoriteFragment2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" />
+        </RelativeLayout>
+
+      <RelativeLayout
+          	android:id="@+id/rltFavoriteList"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_below="@+id/rltTopBar4"
+		    >
+
+          	<TextView
+          	     android:id="@+id/txvNoFavoriteSuppliers"
+          	     android:layout_width="match_parent"
+          	     android:layout_height="19dp"
+          	     android:gravity="center_horizontal"
+          	     android:text="@string/txv_no_favorite"
+          	     android:textColor="#000000"
+          	     android:textSize="13sp"
+          	     android:layout_marginTop="12dp"
+          	     android:visibility="gone"
+          	    />
+          
+		    <ListView
+		         android:id="@+id/lstFavoriteList"
+		         android:layout_width="match_parent"
+		         android:layout_height="match_parent"
+		         android:scrollbars="none"
+		         android:divider="#00000000"
+		        >        
+		    </ListView>
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/rltPickerWrapper"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:visibility="gone"
+	    >	    
+	    <ImageView
+	        android:contentDescription="@string/app_name"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#B3000000" 
+	        />
+	    <ImageView
+	        android:contentDescription="@string/app_name"
+	        android:layout_width="262dp"
+	        android:layout_height="152dp"
+	        android:layout_marginTop="100dp"
+	        android:background="@drawable/app_logo"
+	        android:layout_centerHorizontal="true"
+	        />
+	    <RelativeLayout
+	        android:id="@+id/rltPickerView"
+	        android:layout_width="match_parent"
+	        android:layout_height="186dp"
+	        android:layout_alignParentBottom="true"
+	        >
+	        
+	        <RelativeLayout
+	            android:id="@+id/rltPickerViewTopBar"
+	            android:layout_width="match_parent"
+	            android:layout_height="43dp"
+	            android:background="#ff1777" 
+	            >
+	            <Button
+	                android:id="@+id/btnFilterSuppliers"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentLeft="true"
+	                android:background="#ff1777"
+	                android:paddingLeft="10dp"
+	                android:text="@string/btn_filter_suppliers" 
+	                android:textSize="11sp"
+	                android:textColor="#ffffff"
+	                />
+	            <Button
+	                android:id="@+id/btnSelectFilterItem"
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_alignParentRight="true"
+	                android:background="#ff1777"
+	                android:paddingRight="10dp"
+	                android:text="@string/btn_select_filter_item" 
+	                android:gravity="center"
+	                android:textSize="14sp"
+	                android:textColor="#ffffff"
+	                />
+	        </RelativeLayout>
+	        
+	        <LinearLayout
+	             android:id="@+id/lltPickerViewBody"
+	             android:layout_width="match_parent"
+	             android:layout_height="match_parent"
+	             android:layout_below="@+id/rltPickerViewTopBar"
+	             android:orientation="horizontal"
+	            >
+	            
+	            <NumberPicker
+	                android:id="@+id/pickerFavorite"
+	                android:background="#ffffff"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent" 
+	                />
+	            	            
+	        </LinearLayout>
+	    </RelativeLayout>
+	</RelativeLayout>
+</RelativeLayout>

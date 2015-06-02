@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:padding="0dp"
+     >
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="43dp"
+        android:background="@drawable/list_item_background"
+        />
+
+    <TextView
+        android:id="@+id/txvCategoryName"
+        android:textColor="#ff1777"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="6dp"
+        android:text="@string/app_name"
+        android:gravity="center_vertical"
+        android:textSize="13sp"
+        />
+    
+    <TextView
+        android:id="@+id/txvCategoryDesc"
+        android:textColor="#000000"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/app_name"
+        android:gravity="center_vertical"
+        android:textSize="9sp"
+        />
+
+    <TextView
+        android:id="@+id/txvCategoryMile"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center_vertical"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="9sp" />
+
+</RelativeLayout>

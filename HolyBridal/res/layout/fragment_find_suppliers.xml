@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rltSupplierSearchBar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="6dp"
+        android:background="#333333"
+        android:focusableInTouchMode="true"
+        android:padding="5dp" >
+
+        <EditText
+            android:id="@+id/edtSearchSuppliers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@xml/round_corner"
+            android:enabled="false"
+            android:gravity="center"
+            android:hint="@string/placeholder_search_keyword"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="3sp"
+            android:paddingRight="3dp"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff1777" >
+
+        <Button
+            android:id="@+id/btnSearchSupplies"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_search" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnSearchSupplies2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txvFindSupplies"
+            android:layout_width="144dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/lbl_find_supplies"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnLoadRightSideMenu"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_menu" />
+        
+        <Button
+            android:id="@+id/btnLoadRightSideMenu2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" />
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rltSupplierSearchBar" >
+
+        <ListView
+            android:id="@+id/lstSupplierList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#00000000"
+            android:scrollbars="none" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rltProgressBarWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/progressBarWaitingForHttpResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

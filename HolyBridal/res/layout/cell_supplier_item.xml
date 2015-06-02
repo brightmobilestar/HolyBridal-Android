@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="174dp"
+    android:paddingTop="8dp"
+     >
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:id="@+id/imvIndividualSupplier"
+        android:layout_width="match_parent"
+        android:layout_height="144dp" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/background"
+        />
+
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="15dp"
+        android:layout_height="150dp" 
+        android:background="@drawable/frame_left"
+        />
+    <ImageView
+        android:contentDescription="@string/app_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="15dp"
+        android:layout_height="150dp" 
+        android:background="@drawable/frame_right"
+        />
+    <ImageView
+        android:id="@+id/imvFrame"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="144dp" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/frame_main"
+        />
+    <ImageView
+        android:layout_below="@+id/imvFrame"
+        android:contentDescription="@string/app_name"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" 
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/frame_bottom"
+        />
+    <TextView
+        android:id="@+id/txvSupplierName"
+        android:paddingRight="10dp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="@string/loading"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:layout_alignBottom="@+id/imvIndividualSupplier"
+        android:layout_alignRight="@+id/imvIndividualSupplier"
+        />
+
+</RelativeLayout>

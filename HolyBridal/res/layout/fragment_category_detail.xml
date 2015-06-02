@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout
+        android:id="@+id/rltTopBar3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff1777" >
+
+        <Button
+            android:id="@+id/btnBackFromCategoryDetailToCategory"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_back" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnBackFromCategoryDetailToCategory2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txvCategoryDetailTobBarTitle"
+            android:layout_width="144dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:text="@string/lbl_find_supplies"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnFavoriteCategory"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/btn_favorite" />
+
+        <Button
+            android:id="@+id/btnFavoriteCategory2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/frame_left" />
+        </RelativeLayout>
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/rltTopBar3"
+	    android:orientation="vertical" >
+	
+	    <ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:scrollbars="none"
+	        >
+	
+	        <RelativeLayout
+			    android:id="@+id/lltCategoryDetailWrapper"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingBottom="50dp"
+	            android:orientation="vertical" >
+	
+	            <LinearLayout
+	                android:id="@+id/lltImageGallery"
+	                android:layout_width="290dp"
+	                android:layout_height="169dp"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="14dp"
+	                android:background="#ff1777"
+	                android:padding="0dp" >
+	
+		            <android.support.v4.view.ViewPager
+						android:id="@+id/viewPager"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent" />
+	                
+	            </LinearLayout>
+	            
+	            
+	            <LinearLayout
+	                android:id="@+id/lltPageIndicatorWrapper"
+	                android:orientation="horizontal"
+	                android:layout_width="wrap_content"
+	                android:layout_height="37dp"
+	                android:layout_centerInParent="true"
+	                android:gravity="center"
+	                android:layout_below="@+id/lltImageGallery"
+	                android:layout_marginTop="-7dp" 
+	                >
+	                
+	            </LinearLayout>
+	            
+	            <RelativeLayout
+	                android:layout_width="216dp"
+	                android:layout_height="59dp"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginTop="210dp"
+	                android:gravity="center_horizontal"
+	                android:padding="1dp"
+	                android:background="#333333" >
+		            
+	                <ImageView
+	                    android:id="@+id/imvLogo"
+	                    android:contentDescription="@string/app_name"
+	                    android:layout_width="match_parent"
+	                    android:layout_height="match_parent"
+	                    android:scaleType="fitXY"
+	                    />
+	                <!-- 
+	                <TextView
+	                    android:id="@+id/txvCategorySmallLabel"
+	                    android:layout_width="200dp"
+	                    android:layout_marginTop="31dp"
+	                    android:layout_height="20dp" 
+	                    android:gravity="center"
+	                    android:textColor="#99ffffff"
+	                    android:textSize="9sp"
+	                    />
+	                
+	                <TextView
+	                    android:id="@+id/txvCategoryBigLabel"
+	                    android:layout_width="194dp"
+	                    android:gravity="center"
+	                    android:layout_marginTop="9dp"
+	                    android:layout_height="27dp" 
+	                    android:textColor="#99ffffff"
+	                    android:textSize="22sp"
+	                    />
+	                 -->
+	            </RelativeLayout>
+	
+				<TextView
+				    android:id="@+id/txVSpecilizedIn"
+		            android:layout_width="match_parent"
+		            android:layout_marginTop="277dp"
+		            android:layout_height="21dp" 
+		            android:textSize="13sp"
+		            android:gravity="center_horizontal"
+		            android:textColor="#ff1777"
+		            android:text="@string/txv_specializedin"
+		            />
+				
+				<LinearLayout
+				    android:id="@+id/lltSpecializedBtnWrapper"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_below="@+id/txVSpecilizedIn"
+				    android:orientation="horizontal"
+				    android:gravity="center_horizontal"
+				    >
+				    
+				</LinearLayout>
+				
+				<TextView
+				    android:id="@+id/txvAbout"
+		            android:layout_width="match_parent"
+		            android:layout_below="@+id/lltSpecializedBtnWrapper"
+		            android:layout_marginTop="10dp"
+		            android:layout_height="21dp" 
+		            android:textSize="13sp"
+		            android:gravity="center_horizontal"
+		            android:textColor="#ff1777"
+		            android:text="@string/txv_about"
+		            />
+				
+			    <TextView
+			        android:id="@+id/txvCategoryDescription"
+			        android:gravity="center_horizontal"
+		            android:layout_width="300dp"
+		            android:layout_centerInParent="true"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/txvAbout"
+			        android:textSize="10sp"
+			        />
+	
+			    <TextView
+			        android:id="@+id/txvTouch"
+		            android:layout_below="@+id/txvCategoryDescription"
+		            android:layout_marginTop="10dp"
+		            android:layout_width="match_parent"
+		            android:layout_height="19dp" 
+		            android:textSize="13sp"
+		            android:gravity="center_horizontal"
+		            android:textColor="#ff1777"
+		            android:text="@string/txv_touch"
+		            />
+	
+			    <RelativeLayout
+			        android:id="@+id/rltTouchViaEmail"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/txvTouch" >
+	
+			        <TextView
+			            android:id="@+id/txvEmail"
+			            android:layout_width="wrap_content"
+			            android:layout_height="17dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_marginTop="7dp"
+			            android:text="@string/txv_email"
+			            android:textColor="#ff1777"
+			            android:textSize="10sp" />
+	
+			        <TextView
+			            android:id="@+id/txvSupplierEmail"
+			            android:layout_width="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/txvEmail"
+			            android:gravity="center_horizontal"
+			            android:textSize="10sp" />
+	
+			        <Button
+			            android:id="@+id/btnTouchViaEmail"
+			            android:layout_width="35dp"
+			            android:layout_height="35dp"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginRight="34dp"
+			            android:background="@drawable/btn_email" />
+	
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rltTouchViaMobile"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rltTouchViaEmail"
+			        android:layout_marginTop="10dp" 
+			        >
+	
+			        <TextView
+			            android:id="@+id/txvMobile"
+			            android:layout_width="wrap_content"
+			            android:layout_height="17dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_marginTop="7dp"
+			            android:text="@string/txv_mobile"
+			            android:textColor="#ff1777"
+			            android:textSize="10sp" />
+	
+			        <TextView
+			            android:id="@+id/txvSupplierMobile"
+			            android:layout_width="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/txvMobile"
+			            android:gravity="center_horizontal"
+			            android:textSize="10sp" />
+	
+			        <Button
+			            android:id="@+id/btnTouchViaMobile"
+			            android:layout_width="35dp"
+			            android:layout_height="35dp"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginRight="34dp"
+			            android:background="@drawable/btn_mobile" />
+	
+			    </RelativeLayout>
+			    
+			    <RelativeLayout
+			        android:id="@+id/rltTouchViaAddress"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rltTouchViaMobile"
+			        android:layout_marginTop="10dp" 
+			        >
+	
+			        <TextView
+			            android:id="@+id/txvAddress"
+			            android:layout_width="wrap_content"
+			            android:layout_height="17dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_marginTop="7dp"
+			            android:text="@string/txv_map"
+			            android:textColor="#ff1777"
+			            android:textSize="10sp" />
+	
+			        <TextView
+			            android:id="@+id/txvSupplierAddress"
+			            android:layout_width="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/txvAddress"
+			            android:gravity="center_horizontal"
+			            android:textSize="10sp" />
+	
+			        <Button
+			            android:id="@+id/btnTouchViaAddress"
+			            android:layout_width="35dp"
+			            android:layout_height="35dp"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginRight="34dp"
+			            android:background="@drawable/btn_map" />
+	
+			    </RelativeLayout>
+			    
+				<RelativeLayout
+			        android:id="@+id/rltTouchViaWebsite"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@+id/rltTouchViaAddress"
+			        android:layout_marginTop="10dp" 
+			        >
+	
+			        <TextView
+			            android:id="@+id/txvWebsite"
+			            android:layout_width="wrap_content"
+			            android:layout_height="17dp"
+			            android:layout_centerHorizontal="true"
+			            android:layout_marginTop="7dp"
+			            android:text="@string/txv_website"
+			            android:textColor="#ff1777"
+			            android:textSize="10sp" />
+	
+			        <TextView
+			            android:id="@+id/txvSupplierWebsite"
+			            android:layout_width="wrap_content"
+			            android:layout_centerInParent="true"
+			            android:layout_height="wrap_content"
+			            android:layout_below="@+id/txvWebsite"
+			            android:gravity="center_horizontal"
+			            android:textSize="10sp" />
+	
+			        <Button
+			            android:id="@+id/btnTouchViaWebsite"
+			            android:layout_width="35dp"
+			            android:layout_height="35dp"
+			            android:layout_alignParentRight="true"
+			            android:layout_alignParentTop="true"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginRight="34dp"
+			            android:background="@drawable/btn_website" />
+	
+			    </RelativeLayout>
+			    
+				<Button
+				    android:id="@+id/btnContactRequest"
+				    android:layout_below="@+id/rltTouchViaWebsite"
+				    android:layout_marginTop="50dp"
+				    android:layout_width="165dp"
+				    android:layout_height="39dp"
+				    android:background="@drawable/btn_request_contact"
+				    android:layout_centerInParent="true"
+				    >
+				    
+				</Button>
+				
+			</RelativeLayout>
+	
+	    </ScrollView>
+	
+	</LinearLayout>
+</RelativeLayout>
+
+
+
